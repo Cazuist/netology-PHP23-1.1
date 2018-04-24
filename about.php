@@ -11,11 +11,11 @@
     $age = 37;
     $mail = 'mail@ya.ru';
     $city = 'Москва';
-    $about_me = 'Грызу гранит науки, стачиваю зубы!';
+    $aboutMe = 'Грызу гранит науки, стачиваю зубы!';
 
 ?>
     
-  <h2>Страница пользователя</h2>
+  <h2>Страница пользователя <?= $name ?></h2>
 
   <table style = "background-color: lightblue;">
     <tr>
@@ -30,7 +30,7 @@
 
     <tr>
       <td><strong>Адрес электронной почты:</strong></td>
-      <td><a href="mailto:mail@ya.ru"><?= $mail ?></td>
+      <td><a href="mailto:<?= $mail ?>"><?= $mail ?></td>
     </tr>
 
     <tr>
@@ -40,7 +40,7 @@
 
     <tr>
       <td><strong>О себе:</strong></td>
-      <td><?= $about_me ?></td>
+      <td><?= $aboutMe ?></td>
     </tr>
 
   </table>
